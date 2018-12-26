@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Server Settings</key>
+	<dict>
+		<key>server address</key>
+		<string>http://219.131.172.164:81/md/</string>
+		<key>file address</key>
+		<string>http://219.131.172.164:81/md/</string>
+	</dict>
+	<key>FileToTableMapping</key>
+	<dict>
+		<key>违章询问笔录</key>
+		<string>AdministrativePenaltyInquireTable</string>
+		<key>违章现场草图</key>
+		<string>AdministrativePenaltyMapTable</string>
+		<key>违章勘验笔录</key>
+		<string>AdministrativePenaltyProveInfoTable</string>
+		<key>勘验检查笔录</key>
+		<string>ProveInfoTable</string>
+		<key>询问笔录</key>
+		<string>InquireTable</string>
+		<key>赔（补）偿通知书</key>
+		<string>AtonementNoticeTable</string>
+		<key>现场平面图</key>
+		<string>CaseMapTable</string>
+		<key>送达回证</key>
+		<string>ServiceReceiptTable</string>
+		<key>赔（补）偿清单</key>
+		<string>CaseCountTable</string>
+		<key>施工整改通知书</key>
+		<string>ConstructionTable</string>
+	</dict>
+	<key>Projectname</key>
+	<dict>
+		<key>projectname</key>
+		<string>yunwu</string>
+		<key>payname</key>
+		<string>粤肇高赔字</string>
+		<key>cityname</key>
+		<string>粤肇</string>
+	</dict>
+</dict>
+</plist>
