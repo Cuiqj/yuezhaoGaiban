@@ -124,4 +124,10 @@
 - (void)showPastDate:(NSDate* )date{
     self.pastDate = date;
 }
+- (void)awakeFromNib
+{
+    self.preferredContentSize = CGSizeMake(300.0, 220.0);
+    [super awakeFromNib];
+}
+
 @end

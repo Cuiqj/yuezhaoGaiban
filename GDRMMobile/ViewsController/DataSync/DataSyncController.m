@@ -101,7 +101,8 @@
 
 
 - (IBAction)btnInitData:(id)sender {
-    [self.dataDownLoader startDownLoad];
+    NSString * orgID = [[NSUserDefaults standardUserDefaults]objectForKey:ORGKEY];
+    [self.dataDownLoader startDownLoad:orgID];
 }
 
 - (IBAction)btnUpLoadData:(UIButton *)sender {

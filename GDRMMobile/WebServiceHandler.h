@@ -30,6 +30,8 @@
 -(void)getIconModels;
 
 - (void)downloadDataSet:(NSString *)strSQL;
+- (void)downloadDataSet:(NSString *)strSQL orgid:(NSString *)orgid;
+
 - (void)uploadDataSet:(NSString *)xmlDataFile;
 - (void)uploadPhotot:(NSString *)xmlDataFile updatedObject:(id)updatedObject;
 //测试网络连通性

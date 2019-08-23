@@ -30,4 +30,7 @@
 @property (nonatomic, retain) NSString * remark;
 
 + (OrgInfo *)orgInfoForOrgID:(NSString *)orgID;
+
+
++ (NSArray *)allOrgInfo;
 @end

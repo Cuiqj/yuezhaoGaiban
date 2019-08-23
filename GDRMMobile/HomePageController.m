@@ -13,6 +13,7 @@
 @interface HomePageController ()
 - (void) loadUserLabel;
 @property (nonatomic,retain) UIPopoverController *popover;
+
 @end
 
 @implementation HomePageController
@@ -50,7 +51,8 @@
         osVC.modalPresentationStyle = UIModalPresentationFormSheet;
         osVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
         osVC.delegate=self;
-        [self presentModalViewController:osVC animated:YES];
+        [self presentViewController:osVC animated:YES completion:nil];
+//        [self presentModalViewController:osVC animated:YES];
     } else {
         NSString *currentUserID=[[NSUserDefaults standardUserDefaults] stringForKey:USERKEY];
         if (currentUserID == nil || [currentUserID isEmpty]) {

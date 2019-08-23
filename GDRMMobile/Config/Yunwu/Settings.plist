@@ -5,9 +5,9 @@
 	<key>Server Settings</key>
 	<dict>
 		<key>server address</key>
-		<string>http://219.131.172.164:81/md/</string>
+		<string>http://124.172.189.177:8123/irmsdata_yzlz</string>
 		<key>file address</key>
-		<string>http://219.131.172.164:81/md/</string>
+		<string>http://124.172.189.177:8123/irmsdata_yzlz</string>
 	</dict>
 	<key>FileToTableMapping</key>
 	<dict>

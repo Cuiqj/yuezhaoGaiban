@@ -14,16 +14,21 @@
 
 @protocol OrgSetDelegate;
 
-@interface OrgSyncViewController : UIViewController<UIAlertViewDelegate>
+@interface OrgSyncViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,WebServiceReturnString,UIAlertViewDelegate>
 @property (retain, nonatomic) DataDownLoad *dataDownLoader;
 //@property (weak, nonatomic) IBOutlet UITableView *tableOrgList;
 @property (weak, nonatomic) IBOutlet UITextField *textServerAddress;
 @property (weak, nonatomic) id<OrgSetDelegate> delegate;
+
+@property (weak, nonatomic) IBOutlet UITableView *tableOrgList;
 @property (weak, nonatomic) IBOutlet UILabel *versionName;
 @property (weak, nonatomic) IBOutlet UILabel *versionTime;
 
 //确定当前服务器地址
+- (IBAction)showServerAddress:(UIBarButtonItem *)sender;
+//确定选择机构
 - (IBAction)setCurrentOrg:(UIBarButtonItem *)sender;
+
 
 @end
 

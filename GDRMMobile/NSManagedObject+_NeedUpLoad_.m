@@ -46,6 +46,9 @@
     if ([obj respondsToSelector:@selector(organization_id)]) {
         NSString *currentUserID=[[NSUserDefaults standardUserDefaults] stringForKey:USERKEY];
         NSString *orgID = [UserInfo userInfoForUserID:currentUserID].organization_id;
+        if (orgID.length <=0) {
+            orgID = [[NSUserDefaults standardUserDefaults]objectForKey:ORGKEY];
+        }
         [obj setValue:orgID forKey:@"organization_id"];
     }
     if ([entityName isEqualToString:@"CaseInfo"]) {
