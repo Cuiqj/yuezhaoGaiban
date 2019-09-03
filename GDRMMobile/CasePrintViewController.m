@@ -1975,9 +1975,17 @@ typedef enum {
                                 fontSize=[[TBXML textForElement:cellFontSizeInXML] floatValue];
                             }
                             TBXMLElement *cellAlignmentInXML = [TBXML childElementNamed:@"alignment" parentElement:cellInXML];
+                            UITextAlignment * cellAlignment = UITextAlignmentLeft;
                             if (cellAlignmentInXML) {
                                 NSString *cellAlignmentString = [TBXML textForElement:cellAlignmentInXML];
                                 cellAlignmentString = [cellAlignmentString lowercaseString];
+                                if (![cellAlignmentString isEmpty]) {
+                                    if ([cellAlignmentString isEqualToString:@"center"]) {
+                                        cellAlignment = UITextAlignmentCenter;
+                                    } else if ([cellAlignmentString isEqualToString:@"right"]){
+                                        cellAlignment = UITextAlignmentRight;
+                                    }
+                                }
                             }
                             CGRect rect = CGRectMake(inx, iny, cellW, cellH);
                             //用于调试元素的位置
@@ -1988,8 +1996,12 @@ typedef enum {
                             if (dataInXML) {
                                 contentString = [contentString stringByAppendingString:[self formedStringFromData:one XMLElement:dataInXML]];
                             }
-                            //[contentString alignWithVerticalCenterDrawInRect:rect withFont:font horizontalAlignment:cellAlignment];
-                            [contentString drawStringFitIntoRect:rect withBasicFont:font];
+//                            if([[TBXML textForElement:cellAlignmentInXML] isEqualToString:@"center"] ){
+                            [contentString alignWithVerticalCenterDrawInRect:rect withFont:font horizontalAlignment:cellAlignment];
+//                            }else{
+//                            [contentString drawStringFitIntoRect:rect withBasicFont:font];
+//                            }
+
                             if (rowH < cellH) {
                                 rowH = cellH;
                             }

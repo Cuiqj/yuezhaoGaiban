@@ -57,6 +57,7 @@ static NSString * xmlName = @"AtonementNoticeTable";
         xmlName = @"GYAtonementNoticeTable";
     }
     [self LoadPaperSettings:xmlName];
+    [self.view setFrame:CGRectMake(0, 0, 200, 1200)];
     /*modify by lxm 不能实时更新*/
      if (![self.caseID isEmpty]) {
          NSArray *noticeArray = [AtonementNotice AtonementNoticesForCase:self.caseID];
@@ -160,10 +161,12 @@ static NSString * xmlName = @"AtonementNoticeTable";
 
       
     notice.case_desc = [CaseProveInfo generateEventDescForNotice:self.caseID];
-    notice.case_desc = [NSString stringWithFormat:@"%@%@",notice.case_desc,@"详细见《损坏公路设施索赔清单》"];
+    notice.case_desc = [NSString stringWithFormat:@"%@%@",notice.case_desc,@"详细见《损坏公路设施索赔清单》(00000)"];
+    NSArray * temp = [notice.case_desc componentsSeparatedByString:@"日"];
+    notice.case_desc = [notice.case_desc stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"%@日",temp[0]] withString:@""];
     notice.citizen_name = proveInfo.citizen_name;
-    notice.witness = @"现场勘验笔录、询问笔录、现场勘查图、现场照片";
-    notice.check_organization = @"广东省公路管理局";
+    notice.witness = @"勘验检查笔录、询问笔录、现场勘查草图、现场照片";
+    notice.check_organization = @"广东省公路事务中心";
     NSString *currentUserID=[[NSUserDefaults standardUserDefaults] stringForKey:USERKEY];
     notice.organization_id = [[OrgInfo orgInfoForOrgID:[UserInfo userInfoForUserID:currentUserID].organization_id] valueForKey:@"orgname"];
     
@@ -253,7 +256,7 @@ static NSString * xmlName = @"AtonementNoticeTable";
         payStr = [payStr stringByAppendingString:[payArray componentsJoinedByString:@"、"]];
 
 
-        payReason = [NSString stringWithFormat:@"%@事实清楚，其行为违反了%@规定，根据%@、并依照%@的规定，当事人应当承担民事责任，赔偿路产损失。", proveInfo.case_short_desc, breakStr, matchStr, payStr];
+        payReason = [NSString stringWithFormat:@"%@规定，根据%@、并依照%@", breakStr, matchStr, payStr];
     }
     notice.pay_reason = payReason;
     NSArray *deformations = [CaseDeformation deformationsForCase:self.caseID forCitizen:notice.citizen_name];
@@ -300,7 +303,7 @@ static NSString * xmlName = @"AtonementNoticeTable";
         UIGraphicsBeginPDFPageWithInfo(pdfRect, nil);
         [self drawStaticTable1:xmlName];
         
-        self.notice.case_desc = [self.notice.case_desc substringFromIndex:1];
+//        self.notice.case_desc = [self.notice.case_desc substringFromIndex:0];
         [self drawDateTable:xmlName withDataModel:self.notice];
         
         //add by lxm 2013.05.08
@@ -314,7 +317,7 @@ static NSString * xmlName = @"AtonementNoticeTable";
         [self drawDateTable:xmlName withDataModel:proveInfo];
         
         UIGraphicsEndPDFContext();
-        self.notice.case_desc = [NSString stringWithFormat:@"于%@",self.notice.case_desc ];
+//        self.notice.case_desc = [NSString stringWithFormat:@"于%@",self.notice.case_desc ];
         return [NSURL fileURLWithPath:filePath];
     } else {
         return nil;
@@ -347,5 +350,12 @@ static NSString * xmlName = @"AtonementNoticeTable";
     }
 }
 
+- (void)deleteCurrentDoc{
+    NSManagedObjectContext * context = [[AppDelegate App] managedObjectContext];
+    if(self.notice){
+        [context deleteObject:self.notice];
+    }
+    [[AppDelegate App] saveContext];
+}
 
 @end

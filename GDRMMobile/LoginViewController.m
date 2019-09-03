@@ -8,6 +8,9 @@
 
 #import "LoginViewController.h"
 
+//MD5 加密    js自带
+#import "NSString+Base64.h"
+
 @interface LoginViewController ()
 @property (nonatomic,assign) NSInteger touchTextTag;
 @property (nonatomic,retain) UIPopoverController *pickerPopover;
@@ -53,10 +56,11 @@
         UserInfo *userInfo = [UserInfo userInfoForUserID:self.loginUserID];
         NSString *password = [[userInfo.account stringByAppendingString:self.textPassword.text] encryptedString];
 //        NSString *password = [self.textPassword.text encryptedString];
+        NSString * passwordMD5 = [NSString md5:self.textPassword.text];
 #ifdef DEBUG
-        if (password) {
+        if (password || passwordMD5) {
 #else
-        if ([password isEqualToString:userInfo.password]) {
+        if ([password isEqualToString:userInfo.password] || [passwordMD5 isEqualToString:userInfo.password]){
 #endif
             [[NSUserDefaults standardUserDefaults] setValue:self.loginUserID forKey:USERKEY];
             [self.delegate reloadUserLabel];
@@ -76,7 +80,7 @@
             NSArray *inspectorArray = [NSArray arrayWithArray:temp];
             [[NSUserDefaults standardUserDefaults] setObject:inspectorArray forKey:INSPECTORARRAYKEY];
             [[NSUserDefaults standardUserDefaults] synchronize];
-            [self dismissModalViewControllerAnimated:YES];
+            [self dismissViewControllerAnimated:YES completion:nil];
         } else {
             void(^ShowAlert)(void)=^(void){
                 UIAlertView *alert=[[UIAlertView alloc] initWithTitle:@"错误" message:@"密码错误!" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];

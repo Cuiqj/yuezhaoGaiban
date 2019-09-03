@@ -1153,7 +1153,7 @@
     self.caseInfo.weater=self.textWeatheer.text;
     self.caseInfo.side=self.textSide.text;
     self.caseInfo.place=self.textPlace.text;
-    self.caseInfo.roadsegment_id=[NSString stringWithFormat:@"%d", [self.roadSegmentID intValue]];
+    self.caseInfo.roadsegment_id=[NSString stringWithFormat:@"%@",self.roadSegmentID];
     self.caseInfo.station_start=[NSNumber numberWithInteger:(self.textStationStartKM.text.integerValue*1000+self.textStationStartM.text.integerValue)];
     self.caseInfo.station_end=[NSNumber numberWithInteger:(self.textStationEndKM.text.integerValue*1000+self.textStationEndM.text.integerValue)];
     if (self.caseInfo.station_end.integerValue == 0) {

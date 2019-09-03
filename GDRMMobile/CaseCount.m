@@ -25,11 +25,11 @@
             NSRange found = [self.chinese_sum rangeOfString:@"万"];
             if (found.location != NSNotFound) {
                 NSString *result = [self.chinese_sum substringToIndex:found.location];
-                return result;
+                return [NSString stringWithFormat:@"人民币%@",result];
             }
         }
     }
-    return @"零";
+    return @"人民币零";
 }
 -(NSString *) chinese_sum_q{
     if (![self.chinese_sum isEmpty]) {

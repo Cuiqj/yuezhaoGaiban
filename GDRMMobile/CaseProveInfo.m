@@ -622,7 +622,7 @@
     //案件发生时间
     NSDateFormatter *dateFormatter=[[NSDateFormatter alloc] init];
     [dateFormatter setLocale:[NSLocale currentLocale]];
-    [dateFormatter setDateFormat:@"yyyy年M月d日HH时mm分"];
+    [dateFormatter setDateFormat:@"yyyy年MM月dd日HH时mm分"];
     NSString *happenDate = [dateFormatter stringFromDate:caseInfo.happen_date];
     
     //桩号
