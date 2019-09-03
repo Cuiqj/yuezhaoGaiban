@@ -534,13 +534,13 @@
 		33A09B0714FDB83C0096BA1D /* OrgSelectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrgSelectController.h; sourceTree = "<group>"; };
 		33A09B0814FDB83D0096BA1D /* OrgSelectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrgSelectController.m; sourceTree = "<group>"; };
 		33A09B0A14FDBD930096BA1D /* OrgSelectHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrgSelectHandler.h; sourceTree = "<group>"; };
-		33A5274614F4E3E6009BC91E /* GDShanMeiRMMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDShanMeiRMMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33A5274614F4E3E6009BC91E /* GDYueZhaoMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDYueZhaoMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A5274A14F4E3E6009BC91E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		33A5274C14F4E3E6009BC91E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		33A5274E14F4E3E6009BC91E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		33A5275214F4E3E6009BC91E /* GDShanMeiRMMobile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GDShanMeiRMMobile-Info.plist"; sourceTree = "<group>"; };
+		33A5275214F4E3E6009BC91E /* GDYueZhaoMobile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GDYueZhaoMobile-Info.plist"; sourceTree = "<group>"; };
 		33A5275614F4E3E6009BC91E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		33A5275814F4E3E6009BC91E /* GDShanMeiRMMobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GDShanMeiRMMobile-Prefix.pch"; sourceTree = "<group>"; };
+		33A5275814F4E3E6009BC91E /* GDYueZhaoMobile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GDYueZhaoMobile-Prefix.pch"; sourceTree = "<group>"; };
 		33A5275914F4E3E6009BC91E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		33A5275A14F4E3E6009BC91E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		33A5276E14F4E5FA009BC91E /* HomePageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageController.h; sourceTree = "<group>"; };
@@ -1255,7 +1255,7 @@
 		33A5274714F4E3E6009BC91E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				33A5274614F4E3E6009BC91E /* GDShanMeiRMMobile.app */,
+				33A5274614F4E3E6009BC91E /* GDYueZhaoMobile.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1311,8 +1311,8 @@
 				339BC5BD16BF592B002AE80F /* Font */,
 				803202D21804B9D00046843E /* Config */,
 				3379F26615639F5000C580E7 /* DataModelsHeader.h */,
-				33A5275214F4E3E6009BC91E /* GDShanMeiRMMobile-Info.plist */,
-				33A5275814F4E3E6009BC91E /* GDShanMeiRMMobile-Prefix.pch */,
+				33A5275214F4E3E6009BC91E /* GDYueZhaoMobile-Info.plist */,
+				33A5275814F4E3E6009BC91E /* GDYueZhaoMobile-Prefix.pch */,
 				B30D427216552939009F62A2 /* InfoPlist.strings */,
 				33A5275614F4E3E6009BC91E /* main.m */,
 				33A9032C14FDD7F9006587A7 /* outer-icon.png */,
@@ -1740,9 +1740,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		33A5274514F4E3E6009BC91E /* GDShanMeiRMMobile */ = {
+		33A5274514F4E3E6009BC91E /* GDYueZhaoMobile */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 33A5276414F4E3E6009BC91E /* Build configuration list for PBXNativeTarget "GDShanMeiRMMobile" */;
+			buildConfigurationList = 33A5276414F4E3E6009BC91E /* Build configuration list for PBXNativeTarget "GDYueZhaoMobile" */;
 			buildPhases = (
 				33A5274214F4E3E6009BC91E /* Sources */,
 				33A5274314F4E3E6009BC91E /* Frameworks */,
@@ -1752,9 +1752,9 @@
 			);
 			dependencies = (
 			);
-			name = GDShanMeiRMMobile;
+			name = GDYueZhaoMobile;
 			productName = GDRMMobile;
-			productReference = 33A5274614F4E3E6009BC91E /* GDShanMeiRMMobile.app */;
+			productReference = 33A5274614F4E3E6009BC91E /* GDYueZhaoMobile.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1771,7 +1771,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 33A5274014F4E3E6009BC91E /* Build configuration list for PBXProject "GDShanMeiRMMobile" */;
+			buildConfigurationList = 33A5274014F4E3E6009BC91E /* Build configuration list for PBXProject "GDYueZhaoMobile" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1783,7 +1783,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				33A5274514F4E3E6009BC91E /* GDShanMeiRMMobile */,
+				33A5274514F4E3E6009BC91E /* GDYueZhaoMobile */,
 			);
 		};
 /* End PBXProject section */
@@ -2166,12 +2166,12 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 97S66GFTED;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GDRMMobile/GDShanMeiRMMobile-Prefix.pch";
+				GCC_PREFIX_HEADER = "GDRMMobile/GDYueZhaoMobile-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2/;
-				INFOPLIST_FILE = "GDRMMobile/GDShanMeiRMMobile-Info.plist";
+				INFOPLIST_FILE = "GDRMMobile/GDYueZhaoMobile-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-lxml2";
-				PRODUCT_NAME = GDShanMeiRMMobile;
+				PRODUCT_NAME = GDYueZhaoMobile;
 				PROVISIONING_PROFILE = "5906a549-331a-4889-9b41-b6b52c8bc446";
 				"PROVISIONING_PROFILE[sdk=*]" = "fe76eca4-2b16-47ab-b129-7a81964272e3";
 				PROVISIONING_PROFILE_SPECIFIER = AllProjectDevelopment_zeng_zhh;
@@ -2188,12 +2188,12 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 27NSK65R5P;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GDRMMobile/GDShanMeiRMMobile-Prefix.pch";
+				GCC_PREFIX_HEADER = "GDRMMobile/GDYueZhaoMobile-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2/;
-				INFOPLIST_FILE = "GDRMMobile/GDShanMeiRMMobile-Info.plist";
+				INFOPLIST_FILE = "GDRMMobile/GDYueZhaoMobile-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-lxml2";
-				PRODUCT_NAME = GDShanMeiRMMobile;
+				PRODUCT_NAME = GDYueZhaoMobile;
 				PROVISIONING_PROFILE = "8bdf704f-d428-4cfe-ba34-5b1834d9f2f7";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "fe76eca4-2b16-47ab-b129-7a81964272e3";
 				PROVISIONING_PROFILE_SPECIFIER = AllProjectCanDistribution;
@@ -2205,7 +2205,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		33A5274014F4E3E6009BC91E /* Build configuration list for PBXProject "GDShanMeiRMMobile" */ = {
+		33A5274014F4E3E6009BC91E /* Build configuration list for PBXProject "GDYueZhaoMobile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				33A5276214F4E3E6009BC91E /* Debug */,
@@ -2214,7 +2214,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		33A5276414F4E3E6009BC91E /* Build configuration list for PBXNativeTarget "GDShanMeiRMMobile" */ = {
+		33A5276414F4E3E6009BC91E /* Build configuration list for PBXNativeTarget "GDYueZhaoMobile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				33A5276514F4E3E6009BC91E /* Debug */,
