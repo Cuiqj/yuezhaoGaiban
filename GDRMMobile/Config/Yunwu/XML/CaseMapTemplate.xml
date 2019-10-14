@@ -1,12 +1,9 @@
-﻿<Map>
+<Map>
     <BackGround Id="0" Type="" Name="" Left="0" Top="0" Width="240" Height="180" Angle="0" Percent="1">
     </BackGround>
     <ForeGround Id="0" Type="" Name="" Left="0" Top="0" Width="240" Height="180" Angle="0" Percent="1">
-        <Items>
-        </Items>
-        <Texts>
-        </Texts>
+        <Items></Items>
+        <Texts></Texts>
     </ForeGround>
-    <Icons>
-    </Icons>
+    <Icons></Icons>
 </Map>

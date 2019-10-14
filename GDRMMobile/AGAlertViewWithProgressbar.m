@@ -115,9 +115,7 @@
         if (cancelButtonTitle != nil) {
             [cancelButtonTitle release];
         }
-        
         cancelButtonTitle = [theCancelButtonTitle retain];
-        
         [self hide];
         self.alertView = nil;
     }

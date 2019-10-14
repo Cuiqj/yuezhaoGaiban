@@ -312,8 +312,16 @@
                 DDXMLElement *itemElement = [DDXMLElement elementWithName:@"IconItem" children:nil attributes:@[typeAttri, x1Attri, y1Attri, x2Attri, y2Attri]];
                 [foreGroundItemsNode addChild:itemElement];
             }
-            casemap.map_item = [mapItemDoc XMLStringWithOptions:DDXMLNodeCompactEmptyElement];
-        NSLog(@"map_Item=%@",casemap.map_item);
+            NSString * temp_item = [mapItemDoc XMLStringWithOptions:DDXMLNodeCompactEmptyElement];
+            for (int i = 1; i>0; i++) {
+                if([temp_item containsString:@"<Items> </Items>"] || [temp_item containsString:@"<Texts> </Texts>"] || [temp_item containsString:@"<Icons> </Icons>"]){
+                    temp_item = [[[temp_item stringByReplacingOccurrencesOfString:@"<Items> </Items>" withString:@"<Items/>"] stringByReplacingOccurrencesOfString:@"<Texts> </Texts>" withString:@"<Texts/>"] stringByReplacingOccurrencesOfString:@"<Icons> </Icons>" withString:@"<Icons/>"];
+                }else{
+                    break;
+                }
+            }
+            casemap.map_item = temp_item;
+            NSLog(@"map_Item=%@",casemap.map_item);
 
             casemap.isuploaded = @(NO);
             [[AppDelegate App] saveContext];
@@ -690,8 +698,15 @@
     if (![self.caseID isEmpty]) {
         CaseMap *caseMap = [CaseMap caseMapForCase:self.caseID];
         if (caseMap.map_item && ![caseMap.map_item isEmpty]) {
-            DDXMLDocument *rootNode = [[DDXMLDocument alloc] initWithXMLString:caseMap.map_item options:0 error:nil];
-            
+            NSString * temp_item = caseMap.map_item;
+            for (int i = 1; i>0; i++) {
+                if([temp_item containsString:@"<Items/>"] || [temp_item containsString:@"<Texts/>"] || [temp_item containsString:@"<Icons/>"]){
+                    temp_item = [[[temp_item stringByReplacingOccurrencesOfString:@"<Items/>" withString:@"<Items> </Items>"] stringByReplacingOccurrencesOfString:@"<Texts/>" withString:@"<Texts> </Texts>"] stringByReplacingOccurrencesOfString:@"<Icons/>" withString:@"<Icons> </Icons>"];
+                }else{
+                    break;
+                }
+            }
+            DDXMLDocument *rootNode = [[DDXMLDocument alloc] initWithXMLString:temp_item options:0 error:nil];
             DDXMLNode *pageWidthElement = [[[rootNode nodesForXPath:@"/Map/BackGround" error:nil] objectAtIndex:0] attributeForName:@"PageWidth"];
             DDXMLNode *idAttri = [[[rootNode nodesForXPath:@"/Map/BackGround" error:nil] objectAtIndex:0] attributeForName:@"Id"];
             self.roadModelBoard.iconModelID = idAttri.stringValue;

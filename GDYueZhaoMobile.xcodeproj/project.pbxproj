@@ -231,7 +231,6 @@
 		677B3359179133DD0066BE89 /* ListSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 677B3358179133DD0066BE89 /* ListSelectViewController.m */; };
 		677B335B1793D1930066BE89 /* MatchLaw.plist in Resources */ = {isa = PBXBuildFile; fileRef = 677B335A1793D1930066BE89 /* MatchLaw.plist */; };
 		67CAEBF3178BE1AF000BF8A7 /* CaseConstructionChangeBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67CAEBF2178BE1AE000BF8A7 /* CaseConstructionChangeBackViewController.m */; };
-		67CAEBF5178BEDA4000BF8A7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67CAEBF4178BEDA4000BF8A7 /* MainStoryboard.storyboard */; };
 		67CAEBF8178C4D1F000BF8A7 /* TrafficRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67CAEBF7178C4D1E000BF8A7 /* TrafficRecordViewController.m */; };
 		67CAEBFB178C6F73000BF8A7 /* SystemTypeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67CAEBFA178C6F6E000BF8A7 /* SystemTypeListViewController.m */; };
 		67CAEBFE178D5948000BF8A7 /* BaseManageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 67CAEBFD178D5945000BF8A7 /* BaseManageObject.m */; };
@@ -281,6 +280,8 @@
 		842189BD230A3CA0005F6C42 /* InquireAskSentence.m in Sources */ = {isa = PBXBuildFile; fileRef = 842189BC230A3CA0005F6C42 /* InquireAskSentence.m */; };
 		842189C0230A3D21005F6C42 /* CheckType.m in Sources */ = {isa = PBXBuildFile; fileRef = 842189BF230A3D21005F6C42 /* CheckType.m */; };
 		84281A3323152E2F00246314 /* AtonementNoticeTable.xml in Resources */ = {isa = PBXBuildFile; fileRef = 84281A3523152E2F00246314 /* AtonementNoticeTable.xml */; };
+		842DF8632329D50E00B17FD6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842DF8652329D50E00B17FD6 /* MainStoryboard.storyboard */; };
+		842DF86F2329F0F100B17FD6 /* LCNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 842DF86E2329F0F000B17FD6 /* LCNetworking.m */; };
 		9B3C3E6C1796C5940071C174 /* ServiceFileSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C3E6B1796C5930071C174 /* ServiceFileSelectViewController.m */; };
 		9B6464571814EE4300569AE3 /* InquireTable2_new.xml in Resources */ = {isa = PBXBuildFile; fileRef = 9B6464561814EE4300569AE3 /* InquireTable2_new.xml */; };
 		9BC0B11217A9001800D7C9CD /* TBXML+TraverseAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC0B11117A9001700D7C9CD /* TBXML+TraverseAddition.m */; };
@@ -682,7 +683,6 @@
 		677B335A1793D1930066BE89 /* MatchLaw.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MatchLaw.plist; sourceTree = "<group>"; };
 		67CAEBF1178BE1AD000BF8A7 /* CaseConstructionChangeBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaseConstructionChangeBackViewController.h; sourceTree = "<group>"; };
 		67CAEBF2178BE1AE000BF8A7 /* CaseConstructionChangeBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaseConstructionChangeBackViewController.m; sourceTree = "<group>"; };
-		67CAEBF4178BEDA4000BF8A7 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		67CAEBF6178C4D1D000BF8A7 /* TrafficRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrafficRecordViewController.h; sourceTree = "<group>"; };
 		67CAEBF7178C4D1E000BF8A7 /* TrafficRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrafficRecordViewController.m; sourceTree = "<group>"; };
 		67CAEBF9178C6F6C000BF8A7 /* SystemTypeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemTypeListViewController.h; sourceTree = "<group>"; };
@@ -770,6 +770,9 @@
 		842189BE230A3D20005F6C42 /* CheckType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckType.h; sourceTree = "<group>"; };
 		842189BF230A3D21005F6C42 /* CheckType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckType.m; sourceTree = "<group>"; };
 		84281A3423152E2F00246314 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = en; path = en.lproj/AtonementNoticeTable.xml; sourceTree = "<group>"; };
+		842DF8642329D50E00B17FD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		842DF86D2329F0F000B17FD6 /* LCNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCNetworking.h; sourceTree = "<group>"; };
+		842DF86E2329F0F000B17FD6 /* LCNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCNetworking.m; sourceTree = "<group>"; };
 		9B3C3E6A1796C5920071C174 /* ServiceFileSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceFileSelectViewController.h; sourceTree = "<group>"; };
 		9B3C3E6B1796C5930071C174 /* ServiceFileSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceFileSelectViewController.m; sourceTree = "<group>"; };
 		9B6464561814EE4300569AE3 /* InquireTable2_new.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = InquireTable2_new.xml; sourceTree = "<group>"; };
@@ -1292,6 +1295,8 @@
 				33A5276714F4E5BD009BC91E /* Views Controller */,
 				33A5275914F4E3E6009BC91E /* AppDelegate.h */,
 				33A5275A14F4E3E6009BC91E /* AppDelegate.m */,
+				842DF86D2329F0F000B17FD6 /* LCNetworking.h */,
+				842DF86E2329F0F000B17FD6 /* LCNetworking.m */,
 				33A6B15B16523D7400E6DF90 /* AGAlertViewWithProgressbar.h */,
 				33A6B15C16523D7400E6DF90 /* AGAlertViewWithProgressbar.m */,
 				3365B34C169AAF8200E9D039 /* NSAttributedString+DrawMethod.h */,
@@ -1307,7 +1312,7 @@
 		33A5275114F4E3E6009BC91E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				67CAEBF4178BEDA4000BF8A7 /* MainStoryboard.storyboard */,
+				842DF8652329D50E00B17FD6 /* MainStoryboard.storyboard */,
 				339BC5BD16BF592B002AE80F /* Font */,
 				803202D21804B9D00046843E /* Config */,
 				3379F26615639F5000C580E7 /* DataModelsHeader.h */,
@@ -1846,7 +1851,7 @@
 				339BC5BA16BF5914002AE80F /* simsun.ttc in Resources */,
 				339BC5BB16BF5914002AE80F /* simfangGBK.ttf in Resources */,
 				339BC5BC16BF5914002AE80F /* simhei.ttf in Resources */,
-				67CAEBF5178BEDA4000BF8A7 /* MainStoryboard.storyboard in Resources */,
+				842DF8632329D50E00B17FD6 /* MainStoryboard.storyboard in Resources */,
 				677B335B1793D1930066BE89 /* MatchLaw.plist in Resources */,
 				803202DB1804B9F00046843E /* Settings.plist in Resources */,
 				84281A3323152E2F00246314 /* AtonementNoticeTable.xml in Resources */,
@@ -1916,6 +1921,7 @@
 				33ADA4BA153EB8B800624122 /* CaseProveInfoPrintViewController.m in Sources */,
 				3386EE5415466A290089D0EB /* CitizenInfoBriefViewController.m in Sources */,
 				3386EE6015468A470089D0EB /* DeformationInfoViewController.m in Sources */,
+				842DF86F2329F0F100B17FD6 /* LCNetworking.m in Sources */,
 				3386EE691546943C0089D0EB /* InquireInfoViewController.m in Sources */,
 				3386EE6C154694710089D0EB /* InquireInfoBriefViewController.m in Sources */,
 				3386EE6F15469D270089D0EB /* PaintBriefViewController.m in Sources */,
@@ -2097,6 +2103,14 @@
 			name = AtonementNoticeTable.xml;
 			sourceTree = "<group>";
 		};
+		842DF8652329D50E00B17FD6 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				842DF8642329D50E00B17FD6 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -2186,7 +2200,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 27NSK65R5P;
+				DEVELOPMENT_TEAM = 97S66GFTED;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GDRMMobile/GDYueZhaoMobile-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2/;
@@ -2194,9 +2208,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = GDYueZhaoMobile;
-				PROVISIONING_PROFILE = "8bdf704f-d428-4cfe-ba34-5b1834d9f2f7";
+				PROVISIONING_PROFILE = "9882d2c7-d721-4e95-b63a-57c9526e0001";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "fe76eca4-2b16-47ab-b129-7a81964272e3";
-				PROVISIONING_PROFILE_SPECIFIER = AllProjectCanDistribution;
+				PROVISIONING_PROFILE_SPECIFIER = AllProjectDistribution_zeng_zhh;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				WRAPPER_EXTENSION = app;
 			};

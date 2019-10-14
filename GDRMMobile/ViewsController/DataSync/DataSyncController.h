@@ -17,7 +17,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *uibuttonUpload;
 @property (weak, nonatomic) IBOutlet UILabel *versionName;
 @property (weak, nonatomic) IBOutlet UIButton *uibuttonResetForm;
-
+@property (weak, nonatomic) IBOutlet UIButton *uibuttonUpdateVersion;
+- (IBAction)UpdateVersion:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *versionTime;
 - (IBAction)btnInitData:(id)sender;
 - (IBAction)btnUpLoadData:(UIButton *)sender;

@@ -324,8 +324,7 @@ static NSString * const xmlName = @"AdministrativePenaltyProveInfoTable";
     }
 }
 
-- (void)setPastDate:(NSDate *)date withTag:(int)tag
-{
+- (void)setPastDate:(NSDate *)date withTag:(int)tag{
     if (tag == self.textstart_date_time.tag) {
         self.caseProveInfo.start_date_time = date;
         

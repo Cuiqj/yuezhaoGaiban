@@ -13,13 +13,14 @@
 @interface DateSelectController : UIViewController
 
 @property (nonatomic,weak) IBOutlet UIDatePicker *datePicker;
+@property (weak, nonatomic) IBOutlet UIDatePicker *timedatePicker;
 - (IBAction)btnSave:(id)sender;
 - (IBAction)btnCancel:(id)sender;
 - (void)showdate:(NSString *)date;
 - (void)showPastDate:(NSDate* )date;
 @property (weak,nonatomic) id<DatetimePickerHandler> delegate;
 @property (copy,nonatomic) NSString *datefrom;
-@property (weak,nonatomic)UIPopoverController *dateselectPopover;
+@property (retain,nonatomic)UIPopoverController * dateselectPopover;
 //时间选择器类型标识，为0时只选择日期，为1时可选择日期和具体时间
 @property (assign,nonatomic) NSInteger pickerType;
 @property (nonatomic, strong) NSDate* pastDate;

@@ -2775,19 +2775,19 @@
             <objects>
                 <viewController title="组织机构弹出选择窗" id="lLP-9a-dcl" customClass="OrgSelectController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iLM-BO-qOT">
-                        <rect key="frame" x="0.0" y="0.0" width="745" height="728"/>
+                        <rect key="frame" x="0.0" y="0.0" width="748" height="1001"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="0f3-sF-dH4">
-                                <rect key="frame" x="0.0" y="44" width="745" height="684"/>
+                                <rect key="frame" x="0.0" y="44" width="748" height="957"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="MyCell" textLabel="mFr-d9-tc5" detailTextLabel="ld3-s2-dcM" style="IBUITableViewCellStyleSubtitle" id="1IF-kN-TxG">
-                                        <rect key="frame" x="0.0" y="22" width="745" height="44"/>
+                                        <rect key="frame" x="0.0" y="22" width="748" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1IF-kN-TxG" id="VP2-9T-FoN">
-                                            <rect key="frame" x="0.0" y="0.0" width="678" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="681" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mFr-d9-tc5">
@@ -2816,7 +2816,7 @@
                                 </connections>
                             </tableView>
                             <navigationBar contentMode="scaleToFill" id="nEE-Ty-GDg">
-                                <rect key="frame" x="0.0" y="0.0" width="745" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="748" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="机构选择" id="Ms1-Au-s3m">
@@ -2850,18 +2850,27 @@
             <objects>
                 <viewController storyboardIdentifier="datePicker" title="日期选择窗口" id="bpu-jQ-FCE" customClass="DateSelectController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d6S-6T-7Wh">
-                        <rect key="frame" x="0.0" y="0.0" width="745" height="728"/>
+                        <rect key="frame" x="0.0" y="0.0" width="748" height="1001"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" id="3Kk-gc-AYt">
-                                <rect key="frame" x="0.0" y="512" width="745" height="216"/>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" id="1fm-Lx-cBn">
+                                <rect key="frame" x="0.0" y="785" width="748" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="352120468.92579699">
                                     <!--2012-02-28 11:14:28 +0000-->
                                 </date>
+                                <locale key="locale" localeIdentifier="zh"/>
+                            </datePicker>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" id="kHs-QF-m5p">
+                                <rect key="frame" x="0.0" y="209" width="748" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="590375508.04891205">
+                                    <!--2019-09-17 01:11:48 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="en_AL"/>
                             </datePicker>
                             <navigationBar contentMode="scaleToFill" id="unz-2S-paj">
-                                <rect key="frame" x="0.0" y="0.0" width="745" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="748" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="日期选择" id="ggT-q1-Dad">
@@ -2882,7 +2891,8 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="datePicker" destination="3Kk-gc-AYt" id="tsA-mB-Ch0"/>
+                        <outlet property="datePicker" destination="1fm-Lx-cBn" id="Fjk-G8-9uX"/>
+                        <outlet property="timedatePicker" destination="kHs-QF-m5p" id="wdZ-Yi-yTA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MWx-dU-z9t" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3060,8 +3070,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TSp-W4-M2w">
-                                <rect key="frame" x="379" y="183" width="266" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TSp-W4-M2w">
+                                <rect key="frame" x="379" y="181" width="266" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="获取基础数据">
@@ -3075,8 +3085,8 @@
                                     <action selector="btnInitData:" destination="Wmh-cN-jGa" eventType="touchUpInside" id="ZFb-Ho-oIP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lQk-AB-qCH">
-                                <rect key="frame" x="379" y="262" width="266" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lQk-AB-qCH">
+                                <rect key="frame" x="379" y="462" width="266" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="设置服务器参数(请不要随意修改)">
@@ -3134,6 +3144,21 @@
                                     <action selector="btnUser:" destination="Wmh-cN-jGa" eventType="touchUpInside" id="SQc-mS-36w"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OPz-mk-chf">
+                                <rect key="frame" x="379" y="362" width="266" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="版本更新">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="UpdateVersion:" destination="Wmh-cN-jGa" eventType="touchUpInside" id="dtI-eV-U0N"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -3143,6 +3168,7 @@
                         <outlet property="uibuttonInit" destination="TSp-W4-M2w" id="J6u-Jf-caM"/>
                         <outlet property="uibuttonReset" destination="lQk-AB-qCH" id="1At-a9-dkQ"/>
                         <outlet property="uibuttonResetForm" destination="0s9-1e-7ap" id="nZS-GE-9oJ"/>
+                        <outlet property="uibuttonUpdateVersion" destination="OPz-mk-chf" id="oWu-zs-IeY"/>
                         <outlet property="uibuttonUpload" destination="jAF-W6-4lM" id="jWA-80-6uu"/>
                         <outlet property="versionName" destination="isP-tb-YUc" id="Ztk-Zv-qOM"/>
                         <outlet property="versionTime" destination="axu-rf-ljg" id="Mpu-W3-mP6"/>
@@ -4853,7 +4879,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I7w-P5-gf1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2973" y="-3"/>
+            <point key="canvasLocation" x="-2947" y="-235"/>
         </scene>
         <!--申请材料列表-->
         <scene sceneID="LyI-Jr-A12">

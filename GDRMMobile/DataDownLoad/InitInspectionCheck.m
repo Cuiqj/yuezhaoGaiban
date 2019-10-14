@@ -44,7 +44,7 @@
 
 - (void)downLoadCheckHandle:(NSString *)orgID{
     WebServiceInit;
-    [service downloadDataSet:@"select * from Handle"  ];
+    [service downloadDataSet:@"select * from Handle"];
 }
 
 - (NSDictionary *)xmlParser:(NSString *)webString{
@@ -60,8 +60,8 @@
 
 - (void)downLoadCheckStatus:(NSString *)orgID{
     WebServiceInit;
-//    [service downloadDataSet:@"select * from Status"];
-    [service downloadDataSet:[NSString stringWithFormat: @"select * from Status where org_id=%@ ",orgID]];
+    [service downloadDataSet:@"select * from Status"];
+//    [service downloadDataSet:[NSString stringWithFormat: @"select * from Status where org_id=%@ ",orgID]];
 }
 - (NSDictionary *)xmlParser:(NSString *)webString{
     return [self autoParserForDataModel:@"CheckStatus" andInXMLString:webString];

@@ -285,7 +285,8 @@ InspectionCheckState inspectionState;
     if (self.state == kRecord) {
         CGRect newFrame = self.textViewRemark.frame;
         newFrame.origin.y=86;
-        newFrame.size.height = self.view.frame.size.height - (self.view.frame.origin.y + newFrame.origin.y) - keyboardEndFrame.size.width-5;
+        newFrame.size.height = 308;
+//        newFrame.size.height = self.view.frame.size.height - (self.view.frame.origin.y + newFrame.origin.y) - keyboardEndFrame.size.width-5;
         //    CGFloat offset=self.textViewRemark.frame.origin.y-newFrame.origin.y;
         self.textViewRemark.frame = newFrame;
     }
